@@ -1,4 +1,4 @@
 # mlkit-learn
 mlkit-learn: lightweight machine learning algorithms for learning.
 
-![indev](https://img.shields.io/badge/-in%20development-yellow.svg)
+![status](https://img.shields.io/badge/status-in%20development-blue.svg)
