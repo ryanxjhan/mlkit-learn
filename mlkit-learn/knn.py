@@ -1,4 +1,19 @@
-import numpy as np
+try:
+    import numpy as np
+except ImportError as error:
+    print(error)
+
+try:
+    import pandas as pd
+except ImportError as error:
+    print(error)
+
+try:
+    from sklearn.model_selection import train_test_split
+    from sklearn.metrics import accuracy_score
+except ImportError as error:
+    print(error)
+
 
 class KNNBase:
     
@@ -48,4 +63,37 @@ class KNNRegressor(KNNBase):
             total_sum += self.y[sorted_indicies[i]]
             
         return total_sum / self.k
-     
+
+class KNNDemo:
+
+    def __init__(self, row, k):
+        self.row = row
+        self.k = k 
+
+    def load_data(self, data_dir="datasets/"):
+        data = pd.read_csv(data_dir + "digit.csv")
+        x = data.values[0:self.row, 1:]
+        y = data.values[0:self.row, 0]
+        train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.2, random_state=0)
+        return train_x, test_x, train_y, test_y
+    
+    def predict(self, train_x, test_x, train_y, test_y):
+        classifier = KNNClassifier(self.k)
+        print("{} loaded.".format(str(classifier)))
+        classifier.fit(train_x, train_y)
+        size = test_x.shape[0]
+        predictions = []
+        for i in range(size):
+            result = classifier.predict(test_x[i])
+            predictions.append(result)
+        print("Prediction completes.")
+        print("Validation score: {}".format(accuracy_score(test_y, predictions)))
+
+    def run(self): 
+        print("See datasets source on: https://www.kaggle.com/c/digit-recognizer/data")
+        print("Only the first 1000 rows are used for faster prediction.")    
+        print("Demo data loaded.")
+        train_x, test_x, train_y, test_y = self.load_data()
+        print("Data splitted for validation.")
+        self.predict(train_x, test_x, train_y, test_y)
+        print("To learn more about K-Nearest Neighbor Algorithm on https://github.com/ryanxjhan/mlkit-learn")
