@@ -11,6 +11,11 @@ Contents
 ===========
 [K-Nearest Neighbor](#k-nearest-neightbor)
 
+
+Install
+===========
+`pip install mklearn`
+
 ## K-Nearest Neighbor
 
 ## Linear Regression
