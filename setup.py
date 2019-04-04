@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="mklearn",
-    version="0.0.3",
+    version="0.0.4",
     author="Ryan Han",
     author_email="ryan.han@uwaterloo.ca",
     description="mlkit-learn: lightweight machine learning algorithms for learning.",

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mklearn
+Version: 0.0.4
+Summary: mlkit-learn: lightweight machine learning algorithms for learning.
+Home-page: https://github.com/ryanxjhan/mlkit-learn
+Author: Ryan Han
+Author-email: ryan.han@uwaterloo.ca
+License: UNKNOWN
+Description: mlkit-learn
+        ===========
+        ![license](https://img.shields.io/github/license/ryanxjhan/mlkit-learn.svg)
+        ![pyv](https://img.shields.io/pypi/pyversions/mklearn.svg)
+        ![pypiv](https://img.shields.io/pypi/v/mklearn.svg?color=green)
+        ![format](https://img.shields.io/pypi/format/mklearn.svg)
+        
+        mlkit-learn is a lightweight machine learning library designed to be **interactive**, **portable**, and **educational**. It implements all of the classic machine learning algorithms from regression to gradient boosting trees. **With only two lines of code, users can witness popular Kaggle datasets being preprocessed and predicted in action**.
+        
+        Contents
+        ===========
+        [K-Nearest Neighbor](#k-nearest-neightbor)
+        
+        
+        Install
+        ===========
+        `pip install mklearn`
+        
+        ## K-Nearest Neighbor
+        
+        ## Linear Regression
+        ## Logistic Regression
+        ## Decision Tree
+        ## (to be continued)
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
