@@ -15,8 +15,6 @@ Contents
 
 [Naive Bayes](#naive-bayes)
 
-[Web Crawler Framework](#crawler)
-
 [Decision Tree](#decision-tree)
 
 [Logistic Regression](#logistic-regression)
