@@ -10,6 +10,17 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 Contents
 ===========
 [K-Nearest Neighbor](#k-nearest-neightbor)
+[Linear Regression](#linear-regression)
+[Naive Bayes](#naive-bayes)
+[Web Crawler](#crawler)
+[Decision Tree](#decision-tree)
+[Logistic Regression](#logistic-regression)
+[Principle Component Analysis](#principle-component-analysis)
+[Clustering](#clustering)
+[Random Forest](#random-forest)
+[Adaptive Boosting](#adaptive-boosting)
+[Neural Network](#neural-network)
+[Gradient Boosting Decision Tree](#gradient-boosting-decision-tree)
 
 
 Install
@@ -17,11 +28,22 @@ Install
 `pip install mklearn`
 
 ## K-Nearest Neighbor
+> sklearn.knn.KNNClassifier(k)
+> sklearn.knn.KNNRegresssor(k)
+> sklearn.knn.KNNDemo(row, k)
+
 
 ## Linear Regression
-## Logistic Regression
+## Naive Bayes
+## Web Crawler
 ## Decision Tree
-## (to be continued)
+## Logistic Regression
+## Principle Component Analysis
+## Clustering
+## Random Forest
+## Adaptive Boosting
+## Neural Network
+## Gradient Boosting Decision Tree
 
 
 
