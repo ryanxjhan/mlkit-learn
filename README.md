@@ -15,7 +15,7 @@ Contents
 
 [Naive Bayes](#naive-bayes)
 
-[Web Crawler](#crawler)
+[Web Crawler Framework](#crawler)
 
 [Decision Tree](#decision-tree)
 
@@ -39,10 +39,9 @@ Install
 `pip install mklearn`
 
 ## K-Nearest Neighbor
-> sklearn.knn.KNNClassifier(k)
-> sklearn.knn.KNNRegresssor(k)
-> sklearn.knn.KNNDemo(row, k)
-
+### Quick Start
+### Classifier
+### Regressor
 
 ## Linear Regression
 ## Naive Bayes
