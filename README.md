@@ -15,7 +15,7 @@ Contents
 
 [Naive Bayes](#naive-bayes)
 
-[Decision Tree](#decision-tree)
+[Tree](#tree)
 
 [Logistic Regression](#logistic-regression)
 
@@ -29,7 +29,7 @@ Contents
 
 [Neural Network](#neural-network)
 
-[Gradient Boosting Decision Tree](#gradient-boosting-tree)
+[Gradient Boosting Tree](#gradient-boosting-tree)
 
 
 Install
@@ -44,14 +44,14 @@ Install
 ## Linear Regression
 ## Naive Bayes
 ## Web Crawler
-## Decision Tree
+## Tree
 ## Logistic Regression
 ## Principle Component Analysis
 ## Clustering
 ## Random Forest
 ## Adaptive Boosting
 ## Neural Network
-## Gradient Boosting Decision Tree
+## Gradient Boosting Tree
 
 
 
