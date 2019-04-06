@@ -9,7 +9,7 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 
 Contents
 ===========
-[Nearest Neighbor](#nearest-neightbor)
+[Nearest Neighbor](#nearest-neighbor)
 
 [Linear Regression](#linear-regression)
 
