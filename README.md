@@ -29,7 +29,7 @@ Contents
 
 [Neural Network](#neural-network)
 
-[Gradient Boosting Decision Tree](#gradient-boosting-decision-tree)
+[Gradient Boosting Decision Tree](#gradient-boosting-tree)
 
 
 Install
