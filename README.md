@@ -9,7 +9,7 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 
 Contents
 ===========
-[K-Nearest Neighbor](#k-nearest-neightbor)
+[Nearest Neighbor](#nearest-neightbor)
 
 [Linear Regression](#linear-regression)
 
@@ -36,7 +36,7 @@ Install
 ===========
 `pip install mklearn`
 
-## K-Nearest Neighbor
+## Nearest Neighbor
 ### Quick Start
 ### Classifier
 ### Regressor
