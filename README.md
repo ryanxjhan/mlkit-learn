@@ -39,7 +39,27 @@ knn.demo(5) # demo(k [the number of nearest neighbour], dir [default: current di
 
 ##### KNN Classifier
 
+```python
+model = KNNClassifier(k)
+model.fit(train_x, train_y)
+size = test_x.shape[0]
+predictions = []
+for i in range(size):
+    result = classifier.predict(test_x[i])
+    predictions.append(result)
+```
+
 ##### KNN Regressor
+
+```python
+model = KNNRegressor(k)
+model.fit(train_x, train_y)
+size = test_x.shape[0]
+predictions = []
+for i in range(size):
+    result = classifier.predict(test_x[i])
+    predictions.append(result)
+```
 
 ### Multivariate Linear Regression
 #### Demo
