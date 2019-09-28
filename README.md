@@ -33,7 +33,7 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 2. run the following code.
 ```python
 from mklearn import knn
-knn.demo(5) # demo(k [the number of nearest neighbour], dir [default: current directory], row [default: first 5000 rows]
+knn.demo(5, row=1000) # k [the number of nearest neighbour], dir [default: current directory], row [default: first 5000 rows]
 ```
 #### Use
 
@@ -64,6 +64,11 @@ for i in range(size):
 ### Multivariate Linear Regression
 #### Demo
 1. download [kc_house_data.csv](https://www.kaggle.com/harlfoxem/housesalesprediction/download#kc_house_data.csv) and put in the directory of your choosing.
+2. run the following code.
+```python
+from mklearn import mlr
+mlr.demo(row=1000) # row [default: first 5000 rows]
+```
 ### Naive Bayes
 ### Decision Tree
 ### Logistic Regression
