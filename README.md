@@ -28,15 +28,22 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 
 
 ### Nearest Neighbor
-To use Nearest Neighbor's demo:
-1. [download test.csv](https://www.kaggle.com/c/digit-recognizer/data) and put in your current directory.
+#### Demo
+1. download [train.csv](https://www.kaggle.com/c/digit-recognizer/data) and put in the directory of your choosing.
 2. run the following code.
 ```python
-import mklearn.knn as knn
-knn = knn.KNNDemo(1000, 5) # here we only use the first 1000 rows of the data and set k = 5.
-knn.run() 
+from mklearn import knn
+knn.demo(5) # demo(k [the number of nearest neighbour], dir [default: current directory], row [default: first 5000 rows]
 ```
+#### Use
+
+##### KNN Classifier
+
+##### KNN Regressor
+
 ### Multivariate Linear Regression
+#### Demo
+1. download [kc_house_data.csv](https://www.kaggle.com/harlfoxem/housesalesprediction/download#kc_house_data.csv) and put in the directory of your choosing.
 ### Naive Bayes
 ### Decision Tree
 ### Logistic Regression
