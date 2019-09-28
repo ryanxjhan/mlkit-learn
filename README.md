@@ -69,6 +69,19 @@ for i in range(size):
 from mklearn import mlr
 mlr.demo(row=1000) # row [default: first 5000 rows]
 ```
+#### Use
+
+```python
+x_train = np.asmatrix(x_train)
+x_train = np.append(np.asmatrix(np.tile(1, x_train.shape[0])).transpose(), x_train, axis=1)
+x_test = np.append(np.asmatrix(np.tile(1, x_test.shape[0])).transpose(), x_test, axis=1)
+y_train = np.ravel(y_train)
+y_test = np.ravel(y_test)
+model = MLR()
+model.fit(x_train, y_train)
+coef = model.coef()
+predictions = model.predict(x_test)
+```
 ### Naive Bayes
 ### Decision Tree
 ### Logistic Regression
