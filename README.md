@@ -29,7 +29,7 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 
 ### Nearest Neighbor
 To use Nearest Neighbor's demo:
-1. [download data](https://www.kaggle.com/c/digit-recognizer/data) and put in your current directory.
+1. [download test.csv](https://www.kaggle.com/c/digit-recognizer/data) and put in your current directory.
 2. run the following code.
 ```python
 import mklearn.knn as knn
