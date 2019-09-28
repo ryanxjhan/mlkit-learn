@@ -1,23 +1,8 @@
 import sys
-
-try:
-    import numpy as np
-except ImportError as error:
-    print(error)
-    sys.exit(1)
-
-try:
-    import pandas as pd
-except ImportError as error:
-    print(error)
-    sys.exit(1)
-
-try:
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import accuracy_score
-except ImportError as error:
-    print(error)
-    sys.exit(1)
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
 
 class KNNBase:
@@ -69,39 +54,24 @@ class KNNRegressor(KNNBase):
             
         return total_sum / self.k
 
-class KNNDemo:
-
-    def __init__(self, row, k):
-        self.row = row
-        self.k = k
-
-    def load_data(self, data_dir=""):
-        data = pd.read_csv(data_dir + "train.csv")
-        x = data.values[0:self.row, 1:]
-        y = data.values[0:self.row, 0]
-        train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.2, random_state=0)
-        return train_x, test_x, train_y, test_y
-    
-    def predict(self, train_x, test_x, train_y, test_y):
-        classifier = KNNClassifier(self.k)
-        print("{} loaded.".format(str(classifier)))
-        classifier.fit(train_x, train_y)
-        size = test_x.shape[0]
-        predictions = []
-        for i in range(size):
-            result = classifier.predict(test_x[i])
-            predictions.append(result)
-        print("Prediction completes.")
-        print("Validation score: {}".format(accuracy_score(test_y, predictions)))
-
-    def run(self):   
-        try:
-            train_x, test_x, train_y, test_y = self.load_data()
-        except:
-            print("Can not find train.csv in your current directory.")
-            print("To download, please visit https://www.kaggle.com/c/digit-recognizer/data.")
-            sys.exit(1)
-        print("Demo data loaded.")
-        print("Data splitted for validation.")
-        self.predict(train_x, test_x, train_y, test_y)
-        print("To learn more about K-Nearest Neighbor Algorithm: https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm")
+def demo(k, dir="", row=5000):
+    try:
+        data = pd.read_csv(dir + "train.csv")
+        print("Data loaded successfully.")
+    except:
+        print("Can not find train.csv in the directory specified.")
+        print("To download, please visit https://www.kaggle.com/c/digit-recognizer/data.")
+    x = data.values[0:row, 1:]
+    y = data.values[0:row, 0]
+    train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.2, random_state=0)
+    print("Data splitted for validation.")
+    classifier = KNNClassifier(k)
+    classifier.fit(train_x, train_y)
+    size = test_x.shape[0]
+    predictions = []
+    for i in range(size):
+        result = classifier.predict(test_x[i])
+        predictions.append(result)
+    print("Prediction completes.")
+    print("Validation score: {}".format(accuracy_score(test_y, predictions)))
+    print("To learn more about K-Nearest Neighbor Algorithm: https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm")
