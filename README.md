@@ -9,7 +9,6 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 
 
 ## Contents
-===========
 [Nearest Neighbor](#nearest-neighbor)
 
 [Multivariate Linear Regression](#multivariate-linear-regression)
@@ -22,12 +21,12 @@ mlkit-learn is a lightweight machine learning library designed to be **interacti
 
 
 ## Install
-===========
 `pip install mklearn`
 
 
 ## Demo
-===========
+
+
 ### Nearest Neighbor
 To use Nearest Neighbor's demo:
 1. [download data](https://www.kaggle.com/c/digit-recognizer/data) and put in your current directory.
