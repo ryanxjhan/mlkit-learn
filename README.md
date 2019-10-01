@@ -9,7 +9,7 @@ mlkit-learn is a lightweight machine learning package designed to be **interacti
 
 
 ## Contents
-[Nearest Neighbor](#nearest-neighbor)
+[K-Nearest Neighbors](#k-nearest-neighbors)
 
 [Multivariate Linear Regression](#multivariate-linear-regression)
 
@@ -19,6 +19,10 @@ mlkit-learn is a lightweight machine learning package designed to be **interacti
 
 [Logistic Regression](#logistic-regression)
 
+[K-Means](#k-means)
+
+[Support Vector Machine](#support-vector-machine)
+
 
 ## Install
 `pip install mklearn`
@@ -27,7 +31,7 @@ mlkit-learn is a lightweight machine learning package designed to be **interacti
 ## Demo
 
 
-### Nearest Neighbor
+### K-Nearest Neighbor
 #### Demo
 1. download [train.csv](https://www.kaggle.com/c/digit-recognizer/data) and put in the directory of your choosing.
 2. run the following code.
@@ -88,6 +92,8 @@ predictions = model.predict(x_test)
 ### Naive Bayes
 ### Decision Tree
 ### Logistic Regression
+### K-Means
+### Support Vector Machine
 
 
 
