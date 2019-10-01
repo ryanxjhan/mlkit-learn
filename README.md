@@ -23,6 +23,8 @@ mlkit-learn is a lightweight machine learning package designed to be **interacti
 
 [Support Vector Machine](#support-vector-machine)
 
+[Random Forest](#random-forest)
+
 
 ## Install
 `pip install mklearn`
@@ -94,6 +96,8 @@ predictions = model.predict(x_test)
 ### Logistic Regression
 ### K-Means
 ### Support Vector Machine
+### Random Forest
+
 
 
 
