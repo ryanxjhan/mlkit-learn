@@ -5,7 +5,7 @@ mlkit-learn
 ![pypiv](https://img.shields.io/pypi/v/mklearn.svg?color=green)
 ![format](https://img.shields.io/pypi/format/mklearn.svg)
 
-mlkit-learn is a lightweight machine learning package designed to be **interactive**, **easy-to-understand**, and **educational**. It implements five of the classic machine learning algorithms from regression to gradient boosting trees. **With only two lines of code, users can witness popular Kaggle datasets being preprocessed and predicted in action**.
+mlkit-learn is a lightweight machine learning package designed to be **interactive**, **easy-to-understand**, and **educational**. It implements all of the classic machine learning algorithms from regression to gradient boosting trees. **With only two lines of code, users can witness popular Kaggle datasets being preprocessed and predicted in action**.
 
 
 ## Contents
