@@ -40,7 +40,8 @@ knn.demo(5, row=1000) # k [the number of nearest neighbour], dir [default: curre
 ##### KNN Classifier
 
 ```python
-model = KNNClassifier(k)
+from mklearn import knn
+model = knn.KNNClassifier(k)
 model.fit(train_x, train_y)
 size = test_x.shape[0]
 predictions = []
@@ -52,7 +53,8 @@ for i in range(size):
 ##### KNN Regressor
 
 ```python
-model = KNNRegressor(k)
+from mklearn import knn
+model = knn.KNNRegressor(k)
 model.fit(train_x, train_y)
 size = test_x.shape[0]
 predictions = []
@@ -72,12 +74,13 @@ mlr.demo(row=1000) # row [default: first 5000 rows]
 #### Use
 
 ```python
+from mklearn import mlr
 x_train = np.asmatrix(x_train)
 x_train = np.append(np.asmatrix(np.tile(1, x_train.shape[0])).transpose(), x_train, axis=1)
 x_test = np.append(np.asmatrix(np.tile(1, x_test.shape[0])).transpose(), x_test, axis=1)
 y_train = np.ravel(y_train)
 y_test = np.ravel(y_test)
-model = MLR()
+model = mlr.MLR()
 model.fit(x_train, y_train)
 coef = model.coef()
 predictions = model.predict(x_test)
