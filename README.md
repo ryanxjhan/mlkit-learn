@@ -41,7 +41,7 @@ knn.demo(5, row=1000) # k [the number of nearest neighbour], dir [default: curre
 
 ```python
 from mklearn import knn
-model = knn.KNNClassifier(k)
+model = knn.KNNClassifier(5)
 model.fit(train_x, train_y)
 size = test_x.shape[0]
 predictions = []
@@ -54,7 +54,7 @@ for i in range(size):
 
 ```python
 from mklearn import knn
-model = knn.KNNRegressor(k)
+model = knn.KNNRegressor(5)
 model.fit(train_x, train_y)
 size = test_x.shape[0]
 predictions = []
