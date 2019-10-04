@@ -8,7 +8,7 @@ mlkit-learn
 mlkit-learn is a lightweight machine learning package designed to be **interactive**, **easy-to-understand**, and **educational**. It implements all of the classic machine learning algorithms from regression to gradient boosting trees. **With only two lines of code, users can witness popular Kaggle datasets being preprocessed and predicted in action**.
 
 
-<details><summary>##Table of Contents</summary><p>
+<details><summary><h2>Table of Contents</h2></summary><p>
     
 [K-Nearest Neighbors](#k-nearest-neighbors)
 
