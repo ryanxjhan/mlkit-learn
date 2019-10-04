@@ -32,9 +32,6 @@ mlkit-learn is a lightweight machine learning package designed to be **interacti
 `pip install mklearn`
 
 
-## Demo
-
-
 ### K-Nearest Neighbors
 #### Demo
 1. download [train.csv](https://www.kaggle.com/c/digit-recognizer/data) and put in the directory of your choosing.
