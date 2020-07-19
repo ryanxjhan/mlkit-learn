@@ -20,11 +20,9 @@ mlkit-learn is a lightweight machine learning package designed to be **interacti
 
 [Logistic Regression](#logistic-regression)
 
-[K-Means](#k-means)
 
 [Support Vector Machine](#support-vector-machine)
 
-[Random Forest](#random-forest)
 </p></details><p></p>
 
 
@@ -93,9 +91,7 @@ predictions = model.predict(x_test)
 ### Naive Bayes
 ### Decision Tree
 ### Logistic Regression
-### K-Means
 ### Support Vector Machine
-### Random Forest
 
 
 
