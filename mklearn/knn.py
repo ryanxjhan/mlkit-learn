@@ -9,16 +9,13 @@ class KNNBase:
     
     def __init__(self, k):
         self.k = k
-    
-    def info(self):
-        print("K-Nearest Neighbors:")
-        print("Pros: High accuracy, insensitive to outliers, no assumptions about data.")
-        print("Cons: Computationally expensive, requires a lot of memory.")
-        print("- Machine Learning in Action")
 
     def fit(self, x, y):
         self.x = x
         self.y = y
+    
+    def __str__(self):
+        return "KNN Classifier"
 
 class KNNClassifier(KNNBase):
     

@@ -5,12 +5,6 @@ class NBClassifier:
     def __str__(self):
         return "Naive Bayes Classifier"
 
-    def info(self):
-        print("Naive Bayes Classifier:")
-        print("Pro: works with a small amount of data.")
-        print("Cons: sensitive to how the input data is prepared.")
-        print("- Machine Learning in Action")
-
     def fit(self, x, y):
 
         row = len(x)
